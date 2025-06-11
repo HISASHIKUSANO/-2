@@ -7,12 +7,13 @@ body {
     justify-content: center;
     align-items: center;
     transition: background 0.5s;
+    background: #111;
 }
 
 .container {
-    background: #fff;
+    background: #222;
     border-radius: 24px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.32);
     padding: 40px 32px;
     display: flex;
     flex-direction: column;
@@ -27,8 +28,8 @@ body {
     margin: 0 0 8px 0;
     border-radius: 16px;
     padding: 12px 32px;
-    background: #f2f2f2;
-    color: #2d2d2d;
+    background: #181818;
+    color: #fff;
 }
 
 #status {
@@ -37,8 +38,8 @@ body {
     margin-bottom: 8px;
     border-radius: 12px;
     padding: 6px 20px;
-    background: #e0e7ff;
-    color: #3730a3;
+    background: #333;
+    color: #ffe082;
 }
 
 .buttons {
@@ -52,22 +53,22 @@ button {
     padding: 10px 28px;
     border: none;
     border-radius: 12px;
-    background: #6366f1;
+    background: #444;
     color: #fff;
     cursor: pointer;
     font-weight: 600;
     transition: background 0.2s, transform 0.1s;
 }
 button:hover {
-    background: #4f46e5;
+    background: #222;
     transform: translateY(-2px);
 }
 
 body.working {
-    background: #e0f7fa;
+    background: #111;
 }
 body.breaking {
-    background: #ffe0e0;
+    background: #222;
 }
 
 @media (max-width: 600px) {
