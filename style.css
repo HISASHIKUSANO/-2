@@ -7,68 +7,78 @@ body {
     justify-content: center;
     align-items: center;
     transition: background 0.5s;
-    background: #111;
+    background: #000000;
+    color: #00ff00;
+    text-shadow: 0 0 8px #00ff00;
 }
 
 .container {
-    background: #222;
+    background: #001100;
     border-radius: 24px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.32);
+    box-shadow: 0 0 20px #00ff00;
     padding: 40px 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    border: 2px solid #00ff00;
 }
 
 #timer {
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: 2px;
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 4px;
     margin: 0 0 8px 0;
     border-radius: 16px;
-    padding: 12px 32px;
-    background: #181818;
-    color: #fff;
+    padding: 20px 40px;
+    background: #003300;
+    color: #00ff00;
+    text-shadow: 0 0 12px #00ff00;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #status {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 8px;
-    border-radius: 12px;
-    padding: 6px 20px;
-    background: #333;
-    color: #ffe082;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    border-radius: 16px;
+    padding: 10px 24px;
+    background: #002200;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .buttons {
     display: flex;
-    gap: 18px;
+    gap: 24px;
 }
 
 button {
-    font-family: inherit;
-    font-size: 1.1rem;
-    padding: 10px 28px;
-    border: none;
-    border-radius: 12px;
-    background: #444;
-    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.3rem;
+    padding: 12px 36px;
+    border: 2px solid #00ff00;
+    border-radius: 16px;
+    background: transparent;
+    color: #00ff00;
     cursor: pointer;
-    font-weight: 600;
-    transition: background 0.2s, transform 0.1s;
+    font-weight: 700;
+    text-shadow: 0 0 8px #00ff00;
+    transition: background 0.3s, color 0.3s, transform 0.1s;
 }
+
 button:hover {
-    background: #222;
-    transform: translateY(-2px);
+    background: #00ff00;
+    color: #000000;
+    transform: translateY(-3px);
 }
 
 body.working {
-    background: #111;
+    background: #000000;
 }
 body.breaking {
-    background: #222;
+    background: #001100;
 }
 
 @media (max-width: 600px) {
@@ -76,7 +86,15 @@ body.breaking {
         padding: 20px 6px;
     }
     #timer {
-        font-size: 2.4rem;
-        padding: 8px 10px;
+        font-size: 3rem;
+        padding: 12px 20px;
+    }
+    #status {
+        font-size: 1.4rem;
+        padding: 8px 16px;
+    }
+    button {
+        font-size: 1rem;
+        padding: 8px 24px;
     }
 }
