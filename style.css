@@ -7,13 +7,13 @@ body {
     justify-content: center;
     align-items: center;
     transition: background 0.5s;
-    background: #111;
+    background: #fff8e1;
 }
 
 .container {
-    background: #222;
+    background: #fffde7;
     border-radius: 24px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.32);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
     padding: 40px 32px;
     display: flex;
     flex-direction: column;
@@ -28,8 +28,8 @@ body {
     margin: 0 0 8px 0;
     border-radius: 16px;
     padding: 12px 32px;
-    background: #181818;
-    color: #fff;
+    background: #fff59d;
+    color: #f57f17;
 }
 
 #status {
@@ -38,8 +38,8 @@ body {
     margin-bottom: 8px;
     border-radius: 12px;
     padding: 6px 20px;
-    background: #333;
-    color: #ffe082;
+    background: #fff176;
+    color: #fbc02d;
 }
 
 .buttons {
@@ -53,22 +53,22 @@ button {
     padding: 10px 28px;
     border: none;
     border-radius: 12px;
-    background: #444;
-    color: #fff;
+    background: #fbc02d;
+    color: #5d4037;
     cursor: pointer;
     font-weight: 600;
     transition: background 0.2s, transform 0.1s;
 }
 button:hover {
-    background: #222;
+    background: #f9a825;
     transform: translateY(-2px);
 }
 
 body.working {
-    background: #111;
+    background: #fffde7;
 }
 body.breaking {
-    background: #222;
+    background: #fff9c4;
 }
 
 @media (max-width: 600px) {
