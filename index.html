@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シンプルポモドーロタイマー</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="working">
+    <div class="container">
+        <div id="status">作業時間</div>
+        <div id="timer">25:00</div>
+        <div class="buttons">
+            <button id="startBtn">開始</button>
+            <button id="pauseBtn">一時停止</button>
+            <button id="resetBtn">リセット</button>
+        </div>
+    </div>
+    <audio id="beep" src="https://freesound.org/data/previews/64/64912_634166-lq.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
